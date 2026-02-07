@@ -7,7 +7,7 @@ extern class StorageVolume {
 	@:flash.property var isWritable(get,never) : Bool;
 	@:flash.property var name(get,never) : String;
 	@:flash.property var rootDirectory(get,never) : File;
-	function new(p1 : File, p2 : String, p3 : Bool, p4 : Bool, p5 : String, p6 : String) : Void;
+	function new(rootDirPath : File, name : String, writable : Bool, removable : Bool, fileSysType : String, drive : String) : Void;
 	private function get_drive() : String;
 	private function get_fileSystemType() : String;
 	private function get_isRemovable() : Bool;

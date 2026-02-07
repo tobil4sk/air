@@ -15,7 +15,7 @@ extern final class Screen extends flash.events.EventDispatcher {
 	private function set_mode(value : ScreenMode) : ScreenMode;
 	@:flash.property static var mainScreen(get,never) : Screen;
 	@:flash.property static var screens(get,never) : Array<Dynamic>;
-	static function getScreensForRectangle(p1 : flash.geom.Rectangle) : Array<Dynamic>;
+	static function getScreensForRectangle(rect : flash.geom.Rectangle) : Array<Dynamic>;
 	private static function get_mainScreen() : Screen;
 	private static function get_screens() : Array<Dynamic>;
 }

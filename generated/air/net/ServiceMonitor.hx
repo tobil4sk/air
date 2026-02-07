@@ -15,5 +15,5 @@ extern class ServiceMonitor extends flash.events.EventDispatcher implements Dyna
 	private function set_pollInterval(value : Float) : Float;
 	function start() : Void;
 	function stop() : Void;
-	static function makeJavascriptSubclass(p1 : Dynamic) : Void;
+	static function makeJavascriptSubclass(constructorFunction : Dynamic) : Void;
 }

@@ -7,7 +7,7 @@ extern class SQLColumnSchema {
 	@:flash.property var defaultCollationType(get,never) : String;
 	@:flash.property var name(get,never) : String;
 	@:flash.property var primaryKey(get,never) : Bool;
-	function new(p1 : String, p2 : Bool, p3 : Bool, p4 : Bool, p5 : String, p6 : String) : Void;
+	function new(name : String, primaryKey : Bool, allowNull : Bool, autoIncrement : Bool, dataType : String, defaultCollationType : String) : Void;
 	private function get_allowNull() : Bool;
 	private function get_autoIncrement() : Bool;
 	private function get_dataType() : String;

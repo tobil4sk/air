@@ -7,5 +7,5 @@ extern interface IFilePromise {
 	private function get_isAsync() : Bool;
 	private function get_relativePath() : String;
 	function open() : flash.utils.IDataInput;
-	function reportError(p1 : flash.events.ErrorEvent) : Void;
+	function reportError(e : flash.events.ErrorEvent) : Void;
 }

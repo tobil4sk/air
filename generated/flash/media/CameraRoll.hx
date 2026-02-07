@@ -2,8 +2,8 @@ package flash.media;
 
 extern class CameraRoll extends flash.events.EventDispatcher {
 	function new() : Void;
-	function addBitmapData(p1 : flash.display.BitmapData) : Void;
-	function browseForImage(?p1 : CameraRollBrowseOptions) : Void;
+	function addBitmapData(bitmapData : flash.display.BitmapData) : Void;
+	function browseForImage(?value : CameraRollBrowseOptions) : Void;
 	function requestPermission() : Void;
 	@:flash.property static var permissionStatus(get,never) : String;
 	@:flash.property static var supportsAddBitmapData(get,never) : Bool;

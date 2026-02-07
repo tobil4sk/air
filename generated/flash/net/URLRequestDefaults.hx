@@ -16,7 +16,7 @@ extern class URLRequestDefaults {
 	private static function get_manageCookies() : Bool;
 	private static function get_useCache() : Bool;
 	private static function get_userAgent() : String;
-	static function setLoginCredentialsForHost(p1 : String, p2 : String, p3 : String) : Dynamic;
+	static function setLoginCredentialsForHost(hostname : String, user : String, password : String) : Dynamic;
 	private static function set_authenticate(value : Bool) : Bool;
 	private static function set_cacheResponse(value : Bool) : Bool;
 	private static function set_followRedirects(value : Bool) : Bool;

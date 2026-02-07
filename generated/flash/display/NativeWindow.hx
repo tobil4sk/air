@@ -24,7 +24,7 @@ extern class NativeWindow extends flash.events.EventDispatcher {
 	@:flash.property var width(get,set) : Float;
 	@:flash.property var x(get,set) : Float;
 	@:flash.property var y(get,set) : Float;
-	function new(p1 : NativeWindowInitOptions) : Void;
+	function new(initOptions : NativeWindowInitOptions) : Void;
 	function activate() : Void;
 	function close() : Void;
 	private function get_active() : Bool;
@@ -50,13 +50,13 @@ extern class NativeWindow extends flash.events.EventDispatcher {
 	private function get_width() : Float;
 	private function get_x() : Float;
 	private function get_y() : Float;
-	function globalToScreen(p1 : flash.geom.Point) : flash.geom.Point;
+	function globalToScreen(globalPoint : flash.geom.Point) : flash.geom.Point;
 	function listOwnedWindows() : flash.Vector<NativeWindow>;
 	function maximize() : Void;
 	function minimize() : Void;
-	function notifyUser(p1 : String) : Void;
-	function orderInBackOf(p1 : NativeWindow) : Bool;
-	function orderInFrontOf(p1 : NativeWindow) : Bool;
+	function notifyUser(type : String) : Void;
+	function orderInBackOf(window : NativeWindow) : Bool;
+	function orderInFrontOf(window : NativeWindow) : Bool;
 	function orderToBack() : Bool;
 	function orderToFront() : Bool;
 	function restore() : Void;
@@ -72,7 +72,7 @@ extern class NativeWindow extends flash.events.EventDispatcher {
 	private function set_x(value : Float) : Float;
 	private function set_y(value : Float) : Float;
 	function startMove() : Bool;
-	function startResize(p1 : Null<String> = "BR") : Bool;
+	function startResize(edgeOrCorner : Null<String> = "BR") : Bool;
 	@:flash.property static var isSupported(get,never) : Bool;
 	@:flash.property static var supportsMenu(get,never) : Bool;
 	@:flash.property static var supportsNotification(get,never) : Bool;

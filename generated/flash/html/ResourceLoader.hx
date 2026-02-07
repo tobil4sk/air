@@ -1,7 +1,7 @@
 package flash.html;
 
 extern class ResourceLoader {
-	function new(p1 : flash.net.URLRequest, p2 : HTMLLoader, p3 : Bool = false) : Void;
+	function new(urlReq : flash.net.URLRequest, htmlControl : HTMLLoader, isStageWebViewRequest : Bool = false) : Void;
 	function cancel() : Void;
 	@:ns("flash.html",internal) static final s_AboutURLScheme : String;
 	@:ns("flash.html",internal) static final s_AppStorageURLScheme : String;

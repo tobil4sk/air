@@ -6,7 +6,7 @@ extern class DeviceRotationEvent extends Event {
 	@:flash.property var roll(get,set) : Float;
 	@:flash.property var timestamp(get,set) : Float;
 	@:flash.property var yaw(get,set) : Float;
-	function new(p1 : String, p2 : Bool = false, p3 : Bool = false, p4 : Float = 0, p5 : Float = 0, p6 : Float = 0, p7 : Float = 0, ?p8 : Array<Dynamic>) : Void;
+	function new(type : String, bubbles : Bool = false, cancelable : Bool = false, timestamp : Float = 0, roll : Float = 0, pitch : Float = 0, yaw : Float = 0, ?quaternion : Array<Dynamic>) : Void;
 	private function get_pitch() : Float;
 	private function get_quaternion() : Array<Dynamic>;
 	private function get_roll() : Float;

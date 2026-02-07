@@ -1,5 +1,5 @@
 package flash.data;
 
 extern class SQLViewSchema extends SQLTableSchema {
-	function new(p1 : String, p2 : String, p3 : String, p4 : Array<Dynamic>) : Void;
+	function new(database : String, name : String, sql : String, columns : Array<Dynamic>) : Void;
 }

@@ -6,7 +6,7 @@ extern class DatagramSocketDataEvent extends Event {
 	@:flash.property var dstPort(get,set) : Int;
 	@:flash.property var srcAddress(get,set) : String;
 	@:flash.property var srcPort(get,set) : Int;
-	function new(p1 : String, p2 : Bool = false, p3 : Bool = false, p4 : Null<String> = "", p5 : Int = 0, p6 : Null<String> = "", p7 : Int = 0, ?p8 : flash.utils.ByteArray) : Void;
+	function new(type : String, bubbles : Bool = false, cancelable : Bool = false, srcAddress : Null<String> = "", srcPort : Int = 0, dstAddress : Null<String> = "", dstPort : Int = 0, ?data : flash.utils.ByteArray) : Void;
 	private function get_data() : flash.utils.ByteArray;
 	private function get_dstAddress() : String;
 	private function get_dstPort() : Int;

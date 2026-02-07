@@ -6,7 +6,7 @@ extern class BrowserInvokeEvent extends Event {
 	@:flash.property var isUserEvent(get,never) : Bool;
 	@:flash.property var sandboxType(get,never) : String;
 	@:flash.property var securityDomain(get,never) : String;
-	function new(p1 : String, p2 : Bool, p3 : Bool, p4 : Array<Dynamic>, p5 : String, p6 : String, p7 : Bool, p8 : Bool) : Void;
+	function new(type : String, bubbles : Bool, cancelable : Bool, arguments : Array<Dynamic>, sandboxType : String, securityDomain : String, isHTTPS : Bool, isUserEvent : Bool) : Void;
 	private function get_arguments() : Array<Dynamic>;
 	private function get_isHTTPS() : Bool;
 	private function get_isUserEvent() : Bool;

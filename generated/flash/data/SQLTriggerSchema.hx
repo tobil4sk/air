@@ -2,6 +2,6 @@ package flash.data;
 
 extern class SQLTriggerSchema extends SQLSchema {
 	@:flash.property var table(get,never) : String;
-	function new(p1 : String, p2 : String, p3 : String, p4 : String) : Void;
+	function new(database : String, name : String, sql : String, table : String) : Void;
 	private function get_table() : String;
 }

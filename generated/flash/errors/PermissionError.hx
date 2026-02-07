@@ -1,6 +1,6 @@
 package flash.errors;
 
 extern class PermissionError extends Error {
-	function new(p1 : String, p2 : Int) : Void;
+	function new(message : String, id : Int) : Void;
 	function toString() : String;
 }

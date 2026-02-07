@@ -5,7 +5,7 @@ extern class HTMLHistoryItem {
 	@:flash.property var originalUrl(get,never) : String;
 	@:flash.property var title(get,never) : String;
 	@:flash.property var url(get,never) : String;
-	function new(p1 : String, p2 : String, p3 : Bool, p4 : String) : Void;
+	function new(url : String, originalUrl : String, isPost : Bool, title : String) : Void;
 	private function get_isPost() : Bool;
 	private function get_originalUrl() : String;
 	private function get_title() : String;

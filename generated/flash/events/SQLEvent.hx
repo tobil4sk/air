@@ -1,7 +1,7 @@
 package flash.events;
 
 extern class SQLEvent extends Event {
-	function new(p1 : String, p2 : Bool = false, p3 : Bool = false) : Void;
+	function new(type : String, bubbles : Bool = false, cancelable : Bool = false) : Void;
 	static final ANALYZE : String;
 	static final ATTACH : String;
 	static final BEGIN : String;

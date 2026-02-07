@@ -12,15 +12,15 @@ extern class InputMediaStream extends flash.events.EventDispatcher implements fl
 	function open() : Dynamic;
 	function readBoolean() : Bool;
 	function readByte() : Int;
-	function readBytes(p1 : flash.utils.ByteArray, p2 : UInt = 0, p3 : UInt = 0) : Void;
+	function readBytes(bytes : flash.utils.ByteArray, offset : UInt = 0, length : UInt = 0) : Void;
 	function readDouble() : Float;
 	function readFloat() : Float;
 	function readInt() : Int;
-	function readMultiByte(p1 : UInt, p2 : String) : String;
+	function readMultiByte(length : UInt, charSet : String) : String;
 	function readObject() : Dynamic;
 	function readShort() : Int;
 	function readUTF() : String;
-	function readUTFBytes(p1 : UInt) : String;
+	function readUTFBytes(length : UInt) : String;
 	function readUnsignedByte() : UInt;
 	function readUnsignedInt() : UInt;
 	function readUnsignedShort() : UInt;

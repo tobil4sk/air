@@ -3,7 +3,7 @@ package flash.events;
 extern class ScreenMouseEvent extends MouseEvent {
 	@:flash.property var screenX(get,never) : Float;
 	@:flash.property var screenY(get,never) : Float;
-	function new(p1 : String, p2 : Bool = false, p3 : Bool = false, p4 : Null<Float> = 0, p5 : Null<Float> = 0, p6 : Bool = false, p7 : Bool = false, p8 : Bool = false, p9 : Bool = false, p10 : Bool = false, p11 : Bool = false) : Void;
+	function new(type : String, bubbles : Bool = false, cancelable : Bool = false, screenX : Null<Float> = 0, screenY : Null<Float> = 0, ctrlKey : Bool = false, altKey : Bool = false, shiftKey : Bool = false, buttonDown : Bool = false, commandKey : Bool = false, controlKey : Bool = false) : Void;
 	private function get_screenX() : Float;
 	private function get_screenY() : Float;
 	static final CLICK : String;
