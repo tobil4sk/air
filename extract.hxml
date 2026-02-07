@@ -1,0 +1,5 @@
+--debug
+-swf test.swf
+-D gen-hx-classes
+--macro tools.GenerateExterns.generate()
+--no-output

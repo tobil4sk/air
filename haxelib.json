@@ -1,0 +1,8 @@
+{
+	"name": "air",
+	"classPath": "generated",
+	"version": "0.0.0",
+	"description": "AIR externs for Haxe's swf target",
+	"license": "MIT",
+	"tags": ["air", "flash", "extern"]
+}
