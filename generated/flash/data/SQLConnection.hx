@@ -1,0 +1,43 @@
+package flash.data;
+
+extern class SQLConnection extends flash.events.EventDispatcher {
+	@:flash.property var autoCompact(get,never) : Bool;
+	@:flash.property var cacheSize(get,set) : UInt;
+	@:flash.property var columnNameStyle(get,set) : String;
+	@:flash.property var connected(get,never) : Bool;
+	@:flash.property var inTransaction(get,never) : Bool;
+	@:flash.property var lastInsertRowID(get,never) : Float;
+	@:flash.property var pageSize(get,never) : UInt;
+	@:flash.property var totalChanges(get,never) : Float;
+	function new() : Void;
+	function analyze(?p1 : String, ?p2 : flash.net.Responder) : Void;
+	function attach(p1 : String, ?p2 : flash.utils.Object, ?p3 : flash.net.Responder, ?p4 : flash.utils.ByteArray) : Void;
+	function begin(?p1 : String, ?p2 : flash.net.Responder) : Void;
+	function cancel(?p1 : flash.net.Responder) : Void;
+	function close(?p1 : flash.net.Responder) : Void;
+	function commit(?p1 : flash.net.Responder) : Void;
+	function compact(?p1 : flash.net.Responder) : Void;
+	function deanalyze(?p1 : flash.net.Responder) : Void;
+	function detach(p1 : String, ?p2 : flash.net.Responder) : Void;
+	function getSchemaResult() : SQLSchemaResult;
+	private function get_autoCompact() : Bool;
+	private function get_cacheSize() : UInt;
+	private function get_columnNameStyle() : String;
+	private function get_connected() : Bool;
+	private function get_inTransaction() : Bool;
+	private function get_lastInsertRowID() : Float;
+	private function get_pageSize() : UInt;
+	private function get_totalChanges() : Float;
+	function loadSchema(?p1 : Class<Dynamic>, ?p2 : String, p3 : Null<String> = "main", p4 : Bool = true, ?p5 : flash.net.Responder) : Void;
+	function open(?p1 : flash.utils.Object, p2 : Null<String> = "create", p3 : Bool = false, p4 : Int = 1024, ?p5 : flash.utils.ByteArray) : Void;
+	function openAsync(?p1 : flash.utils.Object, p2 : Null<String> = "create", ?p3 : flash.net.Responder, p4 : Bool = false, p5 : Int = 1024, ?p6 : flash.utils.ByteArray) : Void;
+	function reencrypt(p1 : flash.utils.ByteArray, ?p2 : flash.net.Responder) : Void;
+	function releaseSavepoint(?p1 : String, ?p2 : flash.net.Responder) : Void;
+	function rollback(?p1 : flash.net.Responder) : Void;
+	function rollbackToSavepoint(?p1 : String, ?p2 : flash.net.Responder) : Void;
+	function setSavepoint(?p1 : String, ?p2 : flash.net.Responder) : Void;
+	private function set_cacheSize(value : UInt) : UInt;
+	private function set_columnNameStyle(value : String) : String;
+	@:flash.property static var isSupported(get,never) : Bool;
+	private static function get_isSupported() : Bool;
+}
